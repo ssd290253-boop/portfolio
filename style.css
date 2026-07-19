@@ -1,0 +1,69 @@
+/* Reset----------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Container style------------------------- */
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0be6f;
+}
+/* Header styles----------------------------*/
+#hd {
+    width: 100%;
+    height: 10vh;
+    background-color: #1a4543;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: center; 
+    
+}
+
+.hd__sect{
+    height: 100%;
+    
+    border: solid #fff 1px;
+}
+
+#hd__sec1{
+    /* flex: 1; */
+ 
+}
+
+#hd__sec2{
+    /* flex: 1; */
+
+}
+
+#hd__sec3{
+    /* flex: 1; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main styles-------------- ---------------*/
+#mn {
+    width: 100%;
+    height: 75vh;
+    background-color:#f0be6f ;
+}
+
+/* Footer styles-------------------------- */
+#ft {
+    width: 100%;
+    height: 15vh;
+    background-color: #1a4543;
+}
