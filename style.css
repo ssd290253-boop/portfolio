@@ -1,69 +1,138 @@
-/* Reset----------------------------------- */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+ width: 100%;
+ height: 10vh;
+ background-color: #2b3232;
+ display: flex;
+ /* gap: 1rem; */
+justify-content: space-around;
+/* align-items: center; */
 }
-/* Container style------------------------- */
-#container{
-    width: 100vw;
-    height: 100vh;
-    background-color: #f0be6f;
+
+.hd__sect {
+    /* height: 100%; */
+
+    /* border: 1px solid #fff; */
+    color: #fff;
+    
 }
-/* Header styles----------------------------*/
-#hd {
-    width: 100%;
-    height: 10vh;
-    background-color: #1a4543;
+
+#hd__sec01 {
+    flex: 4;
+    background-image: url(/logo-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#hd__sec02 {
+    flex: 9;
+}
+#hd__sec03 {
+    flex: 6;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+    object-fit:cover;
+}
+/* nav styles-------------------------------- */
+#navbar {
     display: flex;
-    /* gap: 1rem; */
-    justify-content: center; 
-    
-}
-
-.hd__sect{
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    
-    border: solid #fff 1px;
 }
 
-#hd__sec1{
-    /* flex: 1; */
- 
+#navbar__list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 
-#hd__sec2{
-    /* flex: 1; */
-
+.li__items {
+   list-style: none;
+   border-bottom: 1px solid #fff;
+   border-top: 1px solid #fff;
+   padding: 0.5rem 1rem;
 }
 
-#hd__sec3{
-    /* flex: 1; */
+.li__item_link {
+    text-decoration: none;
+    color: #fff;
+}
 
+.li__item_link:hover, .li__items:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #2b3232;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Main styles-------------- ---------------*/
+/* Main styles------------------------------------- */
 #mn {
-    width: 100%;
-    height: 75vh;
-    background-color:#f0be6f ;
+ width: 100%;
+ height: 75vh;
+ background-color: #a0c49a;
+ display: grid;
+     grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 15vh 30vh 30vh;
+    grid-template-areas: 
+        "mn__sec01 mn__sec03 mn__sec03 mn__sec03"
+        "mn__sec01 mn__sec04 mn__sec05 mn__sec06"
+        "mn__sec02 mn__sec07 mn__sec08 mn__sec09";
+        gap: 1rem;
+}
+#mn__logo {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.mn__sect {
+    border: 1px solid #fff;
+
 }
 
-/* Footer styles-------------------------- */
-#ft {
-    width: 100%;
-    height: 15vh;
-    background-color: #1a4543;
+#mn__sec01 {
+    grid-area: mn__sec01;
+    background-color: #b1e9e9;
 }
+#mn__sec02 {
+    grid-area: mn__sec02;
+    background-color: #282567;
+}
+#mn__sec03 {
+    grid-area: mn__sec03;
+    background-color: #dcf5a7;
+}
+#mn__sec04 {
+    grid-area: mn__sec04;
+    background-color: #d7bc85;
+}
+#mn__sec05 {
+    grid-area: mn__sec05;
+    background-color: #9077a7;
+}
+#mn__sec06 {
+    grid-area: mn__sec06;
+    background-color: #6c4f59;
+}
+#mn__sec07 {
+    grid-area: mn__sec07;
+    background-color: #a8c0a4;
+}
+#mn__sec08 {
+    grid-area: mn__sec08;
+    background-color: #f1c9af;
+}
+#mn__sec09 {
+    grid-area: mn__sec09;
+    background-color: #179019;
+}
+
+
+
+
+
+/* Footer styles------------------------------------- */
+#ft {
+  width: 100%;
