@@ -1,31 +1,31 @@
- width: 100%;
- height: 10vh;
- background-color: #2b3232;
- display: flex;
- /* gap: 1rem; */
-justify-content: space-around;
-/* align-items: center; */
+#hd {
+    width: 100%;
+    height: 10vh;
+    background-color: #2b3232;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    /* align-items: center; */
 }
 
 .hd__sect {
     /* height: 100%; */
-
     /* border: 1px solid #fff; */
     color: #fff;
-    
 }
 
 #hd__sec01 {
     flex: 4;
-    background-image: url(/logo-removebg-preview.png);
-    background-size: cover;
+    background-image: url("logo-removebg-preview.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
 }
+
 #hd__sec02 {
     flex: 9;
 }
+
 #hd__sec03 {
     flex: 6;
 }
@@ -33,8 +33,9 @@ justify-content: space-around;
 #logo {
     width: 500px;
     height: 500px;
-    object-fit:cover;
+    object-fit: cover;
 }
+
 /* nav styles-------------------------------- */
 #navbar {
     display: flex;
@@ -67,72 +68,80 @@ justify-content: space-around;
     color: #2b3232;
 }
 
-
 /* Main styles------------------------------------- */
 #mn {
- width: 100%;
- height: 75vh;
- background-color: #a0c49a;
- display: grid;
-     grid-template-columns: 25vw 25vw 25vw 25vw;
+    width: 100%;
+    height: 75vh;
+    background-color: #a0c49a;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
     grid-template-rows: 15vh 30vh 30vh;
     grid-template-areas: 
         "mn__sec01 mn__sec03 mn__sec03 mn__sec03"
         "mn__sec01 mn__sec04 mn__sec05 mn__sec06"
         "mn__sec02 mn__sec07 mn__sec08 mn__sec09";
-        gap: 1rem;
+    gap: 1rem;
 }
+
 #mn__logo {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
 .mn__sect {
     border: 1px solid #fff;
-
 }
 
 #mn__sec01 {
     grid-area: mn__sec01;
     background-color: #b1e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #mn__sec02 {
     grid-area: mn__sec02;
     background-color: #282567;
 }
+
 #mn__sec03 {
     grid-area: mn__sec03;
     background-color: #dcf5a7;
 }
+
 #mn__sec04 {
     grid-area: mn__sec04;
     background-color: #d7bc85;
 }
+
 #mn__sec05 {
     grid-area: mn__sec05;
     background-color: #9077a7;
 }
+
 #mn__sec06 {
     grid-area: mn__sec06;
     background-color: #6c4f59;
 }
+
 #mn__sec07 {
     grid-area: mn__sec07;
     background-color: #a8c0a4;
 }
+
 #mn__sec08 {
     grid-area: mn__sec08;
     background-color: #f1c9af;
 }
+
 #mn__sec09 {
     grid-area: mn__sec09;
     background-color: #179019;
 }
 
-
-
-
-
 /* Footer styles------------------------------------- */
 #ft {
-  width: 100%;
+    width: 100%;
+}
